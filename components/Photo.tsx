@@ -1,11 +1,9 @@
 "use client";
-
 import { motion } from "framer-motion";
 import Image from "next/image";
-
 const Photo = () => {
   return (
-    <div className="opacity-0 xl:opacity-100 fixed bottom-2 right-2 mr-2 mb-2">
+    <div className="xl:opacity-100 fixed bottom-2 left-2 mr-2 mb-2 z-50">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { delay: 0.3, ease: "easeIn" } }}

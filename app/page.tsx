@@ -19,7 +19,7 @@ export default function Home() {
         />
         <Hero />
         {/* <PointedAngle /> */}
-        <Photo />
+        {/* <Photo /> */}
         <Grid />
       </div>
     </main>

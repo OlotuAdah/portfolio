@@ -21,10 +21,10 @@ const MagicButton = ({
 
       {/* Inner button content */}
       <span
-        className={`inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl `}
+        className={`inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl gap-2`}
       >
         <span>{position === "left" && icon}</span>
-        &nbsp; {title} &rarr;
+        {title}
         <span>{position === "right" && icon}</span>
       </span>
     </button>

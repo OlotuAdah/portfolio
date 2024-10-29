@@ -1,5 +1,6 @@
 "use client";
 import dynamic from "next/dynamic";
+import ShimmerBtn from "./ShimmerBtn";
 
 const World = dynamic(() => import("../ui/Globe").then((m) => m.World), {
   ssr: false,
@@ -393,11 +394,34 @@ export function GlobeDemo() {
   ];
 
   return (
-    <div className="flex items-center justify-center -left-5 top-36 md:top-40 w-full h-full">
-      <div className="max-w-7xl mx-auto w-full relative overflow-hidden  px-4 h-96">
-        <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
+    <div className="flex items-center justify-center -left-5 top-36 md:top-40">
+      <div className="max-w-7xl mx-auto w-full relative overflow-hidden  px-4 h-72 ">
         <div className="absolute w-full h-72 md:h-full z-10 ">
           <World data={sampleArcs} globeConfig={globeConfig} />
+        </div>
+        <div className="absolute bottom-6 right-2 z-50">
+          <ShimmerBtn
+            classes="w-fit px-2 rounded-lg bg-[#10132E]/10"
+            title="NGA"
+          />
+        </div>
+        <div className="absolute bottom-6 left-8 z-50">
+          <ShimmerBtn
+            classes="w-fit px-2 rounded-lg bg-[#10132E]/10"
+            title="USA"
+          />
+        </div>
+        <div className="absolute top-10 left-2 z-50">
+          <ShimmerBtn
+            classes="w-fit px-2 rounded-lg bg-[#10132E]/10"
+            title="Europe"
+          />
+        </div>
+        <div className="absolute top-1/2 left-1/2 z-50">
+          <ShimmerBtn
+            classes="w-fit px-2 rounded-lg bg-[#10132E]/10"
+            title="Africa"
+          />
         </div>
       </div>
     </div>

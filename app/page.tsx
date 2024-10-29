@@ -1,6 +1,5 @@
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
-import Photo from "@/components/Photo";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { FaBrain, FaHome, FaInfo } from "react-icons/fa";
 import { FaCarRear } from "react-icons/fa6";

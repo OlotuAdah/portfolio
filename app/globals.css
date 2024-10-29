@@ -88,27 +88,87 @@
   }
 }
 
+/* globals.css */
+
+::-webkit-scrollbar {
+  width: 8px; /* Adjusts the scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  background: #10132e; /*  */ /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1e114f; /* Scrollbar thumb color */
+  border-radius: 10px; /* Rounds the thumb */
+}
+
+/* .pointer {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -10px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid white;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  transform: rotate(45deg);
+} */
+
 /* .pointed-angle::after {
   content: "";
   position: absolute;
-  bottom: -9px; 
-  left: 20px; 
+  bottom: -9px;
+  left: 20px;
   width: 0;
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-top: 10px solid #f56565; 
+  border-top: 10px solid #f56565;
 } */
+
+/* .pointed-angle::before {
+  content: "";
+  position: absolute;
+  top: -40px; 
+  left: 50%;
+  transform: translateX(-50%); 
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 15px solid #fff; 
+  transform: rotate(45deg);
+} */
+
+/* .pointed-angle {
+  position: relative; 
+}
 
 .pointed-angle::before {
   content: "";
   position: absolute;
-  top: -10px; /* Adjust this value to control overlap */
+  top: -38px; 
   left: 50%;
-  transform: translateX(-50%); /* Center the triangle */
+  transform: translateX(-50%) rotate(45deg); 
   width: 0;
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: 10px solid #fff; /* Change to border-bottom to make the triangle face upwards */
-}
+  border-bottom: 15px solid #fff; 
+} */
+
+/* .pointed-angle::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  bottom: 100%; 
+  left: 48%;
+  transform: translateX(-50%) rotate(40deg); 
+  width: 0;
+  height: 0;
+  border-left: 14px solid transparent; 
+  border-right: 10px solid transparent; 
+  border-bottom: 10px solid #000319; 
+} */

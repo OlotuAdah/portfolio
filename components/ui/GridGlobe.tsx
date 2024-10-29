@@ -401,26 +401,32 @@ export function GlobeDemo() {
         </div>
         <div className="absolute bottom-6 right-2 z-50">
           <ShimmerBtn
-            classes="w-fit px-2 rounded-lg bg-[#10132E]/10"
+            classes="w-fit px-2 py-1 rounded-lg bg-[#10132E]/10"
             title="NGA"
+          />
+        </div>
+        <div className="absolute top-28 right-0 z-50">
+          <ShimmerBtn
+            classes="w-fit px-2 py-1 rounded-lg bg-[#10132E]/10"
+            title="UK"
           />
         </div>
         <div className="absolute bottom-6 left-8 z-50">
           <ShimmerBtn
-            classes="w-fit px-2 rounded-lg bg-[#10132E]/10"
+            classes="w-fit px-2 py-1 rounded-lg bg-[#10132E]/10"
             title="USA"
           />
         </div>
         <div className="absolute top-10 left-2 z-50">
           <ShimmerBtn
-            classes="w-fit px-2 rounded-lg bg-[#10132E]/10"
+            classes="w-fit px-2 py-1 rounded-lg bg-[#10132E]/10"
             title="Europe"
           />
         </div>
         <div className="absolute top-1/2 left-1/2 z-50">
           <ShimmerBtn
-            classes="w-fit px-2 rounded-lg bg-[#10132E]/10"
-            title="Africa"
+            classes="w-fit px-2 py-1 rounded-lg bg-[#10132E]/10"
+            title="Global"
           />
         </div>
       </div>

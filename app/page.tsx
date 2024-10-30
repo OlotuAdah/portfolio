@@ -1,5 +1,6 @@
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
+import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { FaBrain, FaHome, FaInfo } from "react-icons/fa";
 import { FaCarRear } from "react-icons/fa6";
@@ -20,7 +21,9 @@ export default function Home() {
         {/* <PointedAngle /> */}
         {/* <Photo /> */}
         <Grid />
+        <RecentProjects />
       </div>
     </main>
   );
 }
+9;

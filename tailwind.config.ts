@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import { PluginAPI } from "tailwindcss/types/config";
 
 const svgToDataUri = require("mini-svg-data-uri");
 
@@ -78,6 +79,12 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+      },
+      perspective: {
+        "1000": "1000px",
+      },
+      rotate: {
+        "x-70": "70deg",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -192,6 +199,16 @@ const config = {
           type: "color",
         },
       );
+    },
+    function ({ addUtilities }: PluginAPI) {
+      addUtilities({
+        ".perspective-1000": {
+          perspective: "1000px",
+        },
+        ".rotate-x-70": {
+          transform: "rotateX(70deg) translateZ(0)",
+        },
+      });
     },
   ],
 } satisfies Config;

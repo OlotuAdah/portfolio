@@ -32,7 +32,7 @@ const RecentProjects = () => {
                 <img
                   src={item.img}
                   alt="cover"
-                  className="z-10 absolute bottom-0 object-contain"
+                  className={`z-10 absolute ${item.id == 1 && "w-[86%] h-[86clear%]  rounded-lg"} ${item.id != 1 && " bottom-0"} }`}
                 />
               </div>
 

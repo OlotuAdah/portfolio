@@ -45,8 +45,8 @@ const Hero = () => {
 
           <a href="#about">
             <MagicButton
-              title="Let's go"
-              otherClasses="mt-4 "
+              title="Let's take a walk"
+              otherClasses="mt-4"
               icon={<FaLocationArrow />}
               position="right"
             />

@@ -77,7 +77,7 @@ export const projects = [
     des: "FirstChekOut provides a seamless payment solution that empowers you to offer your customers a hassle-free transaction experience.",
     img: "/fco2.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    link: "https://firstchekout.com",
   },
   {
     id: 2,

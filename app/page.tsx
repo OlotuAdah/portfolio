@@ -1,7 +1,11 @@
+import Clients from "@/components/Clients";
+import Footer from "@/components/Footer";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
+import Approach from "@/components/MyApproach";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
+import WorkExperience from "@/components/WorkExperience";
 import { FaBrain, FaHome, FaInfo } from "react-icons/fa";
 import { FaCarRear } from "react-icons/fa6";
 
@@ -22,8 +26,11 @@ export default function Home() {
         {/* <Photo /> */}
         <Grid />
         <RecentProjects />
+        <Clients />
+        <WorkExperience />
+        <Approach />
+        <Footer/>
       </div>
     </main>
   );
-}
-9;
+};

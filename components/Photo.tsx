@@ -3,23 +3,24 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 const Photo = () => {
   return (
-    <div className="xl:opacity-100 fixed bottom-2 left-2 mr-2 mb-2 z-50">
+    <div className="xl:opacity-100  w-full h-full ">
       <motion.div
+        className="w-full h-full flex items-center justify-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { delay: 0.3, ease: "easeIn" } }}
       >
-        <div className="w-[150px] h-[150px] mix-blend-lighten relative">
+        <div className="w-[35%] h-[35%] mix-blend-lighten relative mt-4">
           <Image
             src="/adah.png"
             priority
             quality={100}
             fill
             alt=""
-            className="object-contain rounded-[50%]"
+            className="object-contain rounded-[50%] mt-4 "
           />
-          <div className="absolute top-0 left-0 w-full h-full bg-[#000319]/35 mix-blend-multiply"></div>
+          <div className="absolute top-0 left-0 w-full h-full  mix-blend-multiply"></div>
           <motion.svg
-            className="w-[152px] h-[152px] z-50 "
+            className="min-w-[35%] min-h-[35%] z-50 "
             fill="transparent"
             viewBox="0 0 506 506 "
             xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +29,7 @@ const Photo = () => {
               cx="253"
               cy="253"
               r="250"
-              stroke="#fff"
+              stroke="#C3B1D9"
               strokeWidth="4"
               strokeLinecap="round"
               initial={{ strokeDasharray: "24 10 0 0" }}

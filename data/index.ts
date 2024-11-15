@@ -73,134 +73,138 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "First Bank - FirstChekOut payment gateway",
+    title: "FBN FirstChekOut payment gateway",
     des: "FirstChekOut provides a seamless payment solution that empowers you to offer your customers a hassle-free transaction experience.",
     img: "/fco2.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://firstchekout.com",
+    link: "https://www.firstchekout.com",
   },
   {
     id: 2,
     title: "Lagos state government collections",
     des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
+    img: "/revpay2.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    link: "https://www.firstchekout.com/lasgcollections",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
+    title: "Merchants and Aggregators Settlement Service",
+    des: "Streamlines the financial reconciliation and payment process, enabling efficient and accurate settlements for businesses. Designed to handle high volumes with precision, it ensures timely payouts and transparency across merchant networks.",
+    img: "/api.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    link: "#projects",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
+    title: "FBNH Right Issue on Lit App",
+    des: "Empowers thousands of customers to seamlessly purchase shares directly through their mobile devices. This feature simplifies investment access, making it easy for users to participate in share offerings securely and conveniently.",
+    img: "/api2.jpg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    link: "#projects",
   },
 ];
 
-export const testimonials = [
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-];
+
 
 export const companies = [
   {
     id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
+    name: "First Bank of Nigeria",
+    img: "/FBN.jpg",
   },
   {
     id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
+    name: "Filly Coder",
+    img: "/fillycoder.jpg",
   },
   {
     id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
+    name: "Brain Wealth Projects",
+    img: "/BWP.png",
   },
   {
     id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
+    name: "ECNX",
+    img: "/ecnx.jpg",
   },
   {
     id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
+    name: "GTB",
+    img: "/gtb.svg",
   },
 ];
 
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
+    title: "Software Engineer - FBN",
     desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
+    title: "Software Developer - Filly Coder",
     desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
+    thumbnail: "/exp1.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
+    title: "Software Engineer - BrainWealth",
     desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
+    thumbnail: "/exp4.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
+    title: "Software Dev Intern - ECNX",
     desc: "Developed and maintained user-facing features using modern frontend technologies.",
     className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    thumbnail: "/exp2.svg",
   },
 ];
+
+
+export const testimonials = [
+  {
+    quote:
+      "Working with Adah was a seamless experience. His technical expertise and commitment to pushing the limits of innovation added tremendous value to our projects at FBN Digital Innovation Lab. Adah approaches challenges with a proactive mindset and a genuine dedication to quality. A true asset for any engineering team.",
+    name: "Oluwafemi Adeliyi",
+    title: "Head of Engineering, FBN Digital Innovation Lab",
+    img: "/femi.jpg",
+  },
+  {
+    quote:
+      "Adah was an invaluable partner in bringing the First Chekout platform to life. His attention to detail and readiness to tackle challenges head-on were instrumental in ensuring each project’s success. Adah's passion for his work shines through in every deliverable, making him a reliable collaborator and a delight to work with.",
+    name: "Ihikere Sandra",
+    title: "Project Owner, First Chekout and First Bills Pay",
+    img: "/sandra.jpg",
+  },
+  {
+    quote:
+      "Adah’s ability to balance technical skill with a strong collaborative spirit made him a key contributor to our development initiatives. His reliability, forward-thinking approach, and commitment to excellence are truly commendable. Adah brings both dedication and creativity to the table, qualities every team can benefit from.",
+    name: "George Onyewuchi",
+    title: "Team Lead, Enterprise Applications Development - Access Bank Plc ",
+    img: "/george.jpg",
+  },
+  {
+    quote:
+      "It was a pleasure to collaborate with Adah on the Lit Mobile App. His understanding of both product needs and technical requirements greatly contributed to the app’s success. Adah’s proactive approach and commitment to delivering the best user experience make him an exceptional partner in any development endeavor.",
+    name: "Jude Frank",
+    title: "Product Owner, FBN Lit Mobile App",
+    img: "/jude.jpg",
+  },
+  {
+    quote:
+      "Adah’s contributions to our software engineering projects have been nothing short of outstanding. His ability to dive deep into complex challenges and consistently deliver high-quality results reflects his dedication to excellence. Adah is a professional who brings both skill and innovation to any project, making him a tremendous asset to our team.",
+    name: "Ernest Ibeh",
+    title: "Team Lead - Software Engineering, FBN Digital Innovation Lab",
+    img: "/ernest.jpg",
+  },
+];
+
 
 export const socialMedia = [
   {

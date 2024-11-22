@@ -91,16 +91,16 @@
 /* globals.css */
 
 ::-webkit-scrollbar {
-  width: 8px; /* Adjusts the scrollbar width */
+  width: 8px !important; /* Adjusts the scrollbar width */
 }
 
 ::-webkit-scrollbar-track {
-  background: #10132e; /*  */ /* Track color */
+  background: #10132e  !important;  /*  */ /* Track color */
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #CBACF9; /* Scrollbar thumb color */
-  border-radius: 10px; /* Rounds the thumb */
+  background-color: #CBACF9 !important; /* Scrollbar thumb color */
+  border-radius: 10px !important; /* Rounds the thumb */
 }
 
 /* .pointer {
@@ -214,4 +214,40 @@
 }
 .logo:nth-child(4){
   transition-delay: 600ms;
+}
+
+
+/* // animation classes for Toast notification  */
+@keyframes slideInBlurFromRight {
+  0% {
+    transform: translateX(100%);
+    filter: blur(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutBlurToRight {
+  0% {
+    transform: translateX(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    filter: blur(10px);
+    opacity: 0;
+  }
+}
+
+.toast-enter {
+  animation: slideInBlurFromRight 0.3s ease-in forwards;
+}
+
+.toast-exit {
+  animation: slideOutBlurToRight 0.3s ease-in-out forwards;
 }

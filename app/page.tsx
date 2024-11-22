@@ -18,7 +18,7 @@ export default function Home() {
             { name: "Home", link: "/", icon: <FaHome /> },
             { name: "Education", link: "/", icon: <FaBrain /> },
             { name: "Resume", link: "/", icon: <FaCarRear /> },
-            { name: "Contact", link: "/", icon: <FaInfo /> },
+            { name: "Contact", link: "#contact", icon: <FaInfo /> },
           ]}
         />
         <Hero />

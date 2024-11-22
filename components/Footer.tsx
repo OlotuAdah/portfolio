@@ -1,9 +1,32 @@
-import { FaLocationArrow } from "react-icons/fa6";
+"use client";
 
-import { socialMedia } from "@/data";
+import { Toaster } from "react-hot-toast";
+import { FaCopy, FaLocationArrow } from "react-icons/fa6";
+
+import { socialMedia, toastTypes } from "@/data";
+import { useState } from "react";
+import FlowbiteToast from "./reusables/FlowbiteToast";
 import MagicButton from "./ui/MagicButton";
 
 const Footer = () => {
+
+  const [toastMessage, setToastMessage] = useState<string>("")
+  const [toastType, setToastType] = useState<string>("")
+
+    const [isToastVisible, setIsToastVisible] = useState(false);
+
+    const hideToast = () => setIsToastVisible(false);
+
+
+
+  const copyEmail = () => {
+    navigator.clipboard.writeText("adaholotu@gmail.com");
+    setToastMessage("Email copied successfully!")
+    setToastType(toastTypes.success)
+    setIsToastVisible(true);
+
+  };
+
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
       {/* background grid */}
@@ -23,13 +46,21 @@ const Footer = () => {
         <p className="text-white-200 md:mt-10 my-5 text-center">
           Let&apos;s connect and explore how we can actualize your goals.
         </p>
-        <a href="mailto:adaholotu@gmaill.com">
+
+        <div className="flex flex-row justify-between items-center space-x-4">
+          <MagicButton
+            title="Copy my Email"
+            icon={<FaCopy />}
+            position="right"
+            handleClick={copyEmail}
+          />
           <MagicButton
             title="Holler at me!"
             icon={<FaLocationArrow />}
             position="right"
           />
-        </a>
+          <Toaster />
+        </div>
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">
@@ -47,6 +78,15 @@ const Footer = () => {
           ))}
         </div>
       </div>
+      <FlowbiteToast
+        iconName={
+          toastType === toastTypes.success ? "Check icon" : "Close icon"
+        }
+        message={toastMessage}
+        showToast={isToastVisible}
+        closeToast={hideToast}
+        key={'footer-toast-1'}
+      />
     </footer>
   );
 };

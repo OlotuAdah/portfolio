@@ -220,3 +220,6 @@ export const socialMedia = [
     img: "/link.svg",
   },
 ];
+
+
+export const toastTypes = {success:"success",warning:"warning",error:"error"}
